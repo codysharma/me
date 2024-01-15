@@ -1226,3 +1226,7 @@ section {
 #sharmer_news_images {
   max-height: 400px;
 }
+
+#testimonials {
+  display: none;
+}

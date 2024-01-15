@@ -11,20 +11,20 @@
   /**
    * Easy selector helper function
    */
-  const select = (el, all = false) => {
-    el = el.trim()
+  const select = (element, all = false) => {
+    element = element.trim()
     if (all) {
-      return [...document.querySelectorAll(el)]
+      return [...document.querySelectorAll(element)]
     } else {
-      return document.querySelector(el)
+      return document.querySelector(element)
     }
   }
 
   /**
    * Easy event listener function
    */
-  const on = (type, el, listener, all = false) => {
-    let selectEl = select(el, all)
+  const on = (type, element, listener, all = false) => {
+    let selectEl = select(element, all)
     if (selectEl) {
       if (all) {
         selectEl.forEach(e => e.addEventListener(type, listener))
@@ -37,8 +37,8 @@
   /**
    * Easy on scroll event listener 
    */
-  const onscroll = (el, listener) => {
-    el.addEventListener('scroll', listener)
+  const onscroll = (element, listener) => {
+    element.addEventListener('scroll', listener)
   }
 
   /**
