@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Spaceman Project Details</title>
+  <title>Cody Library Project Details</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -48,18 +48,38 @@
 
           <div class="col-lg-8">
             <div class="portfolio-details-slider swiper">
-              <div class="swiper-wrapper align-items-center">
+              <div class="swiper-wrapper align-items-center" id="sharmer_news_images">
 
                 <div class="swiper-slide">
-                  <img src="./assets/img/portfolio/spaceman/spaceman1.png" alt="">
+                  <img src="./assets/img/portfolio/cody_library/library1.png" alt="">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="./assets/img/portfolio/spaceman/spaceman2.png" alt="">
+                  <img src="./assets/img/portfolio/cody_library/library2.png" alt="">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="./assets/img/portfolio/spaceman/spaceman3.png" alt="">
+                  <img src="./assets/img/portfolio/cody_library/library3.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="./assets/img/portfolio/cody_library/library4.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="./assets/img/portfolio/cody_library/library5.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="./assets/img/portfolio/cody_library/library6.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="./assets/img/portfolio/cody_library/library7.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="./assets/img/portfolio/cody_library/library8.png" alt="">
                 </div>
 
               </div>
@@ -69,29 +89,27 @@
 
           <div class="col-lg-4">
             <div class="portfolio-info">
-              <h3>Spaceman information</h3>
+              <h3>Cody Library information</h3>
               <ul>
-                <li><strong>Category</strong>: Front End</li>
-                <li><strong>Tech Used</strong>: Javascript, CSS, HTML, JSON API integration</li>
-                <li><strong>Project URL</strong>: <a href="https://codysharma.github.io/SpacemanGame/" target=”_blank” >https://codysharma.github.io/SpacemanGame/</a></li>
+                <li><strong>Category</strong>: Full Stack</li>
+                <li><strong>Tech Used</strong>: Django, Django Templates, PostgreSQL as backend, Python, Dynamic API calls, Boostrap, Bootstwatch, JS</li>
+                <li><strong>Project URL</strong>: <a href="https://github.com/codysharma/CodyLibrary" target=”_blank” >https://github.com/codysharma/CodyLibrary
+                </a></li>
               </ul>
             </div>
             <div class="portfolio-description">
               <h2>Description</h2>
               <p>
-                An update on the hangman word guessing game, this in-browser game can be played either by 2 players alternative or solo with a randomally generated word pulled via API. 
-
-                <p>Features of this program:</p>
+                A library website with functionality tied to authorization level: browsing and "contact us" without login, borrowing books and registering for events with user, CRUD functionality of models with admin.  
+                <p>Features of this app:</p>
                 <ul>
-                  <li>Random word pulled via API for playing against the computer</li>
-                  <li>An option for playing with or without the timer</li>
-                  <li>A choice of how many mistaken letter guesses to allow</li>
-                  <li>A hint button appearing after 2 consecutive mistaken guesses</li>
-                  <li>A reset button at the end of each round regardless of victory to play again with the same conditions regarding timer, number of mistakes, etc.</li>
-                  <li>A checker to prevent spaces or non-alpha cahracters when a player inputs the mystery word</li>
-                  <li>Dynamic content and graphics based on stimuli</li>
+                  <li>Django models, including use of ForeignKey and ManytoMany</li>
+                  <li>Search function through books model, including linked field</li>
+                  <li>Authentication and authorization using inbuilt Django middleware</li>
+                  <li>Ticketing system with contact model having issue, resolved status, last contact</li>
+                  <li>Display list of books tied to current user logged in</li>
+                  <li>Views pages based on filter through the database</li>
                 </ul>
-              </p>
             </div>
           </div>
 
