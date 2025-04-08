@@ -1,1 +1,2 @@
-Publishing repo for my website
+-Turn modals into routes  
+-move blurb to landing section, make longer about me for main
