@@ -268,3 +268,39 @@
   new PureCounter();
 
 })()
+
+// making bg of landing section a slideshow instead of static
+const landingBackgrounds = [
+  '../assets/img/landingImages/1.png',
+  '../assets/img/landingImages/2.png',
+  '../assets/img/landingImages/3.png',
+  '../assets/img/landingImages/4.png'
+]
+
+var currentIndex = 0;
+var activeBg = 'bg1';
+
+function nextBackground() {
+  const current = document.getElementById(activeBg);
+  const next = document.getElementById(activeBg === 'bg1' ? 'bg2' : 'bg1');
+  
+  // Set the next background image
+  next.style.backgroundImage = `url(${landingBackgrounds[currentIndex]})`;
+  
+  // Toggle active class for fade effect
+  current.classList.remove('active');
+  next.classList.add('active');
+  
+  // Toggle which element is active
+  activeBg = activeBg === 'bg1' ? 'bg2' : 'bg1';
+  
+  // Increment index - this is the key part
+  currentIndex = (currentIndex + 1) % landingBackgrounds.length;
+}
+
+// Initialize first background
+document.getElementById('bg1').style.backgroundImage = `url(${landingBackgrounds[0]})`;
+document.getElementById('bg1').classList.add('active');
+
+setInterval(nextBackground, 3500); 
+
