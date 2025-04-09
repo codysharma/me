@@ -271,10 +271,11 @@
 
 // making bg of landing section a slideshow instead of static
 const landingBackgrounds = [
+  '../assets/img/landingImages/4.png',
   '../assets/img/landingImages/1.png',
   '../assets/img/landingImages/2.png',
   '../assets/img/landingImages/3.png',
-  '../assets/img/landingImages/4.png'
+  
 ]
 
 var currentIndex = 0;
