@@ -1264,8 +1264,11 @@ section {
   
 }
 
-/* Cody's Library Formatting */
+/* -----------------Tableau Section Formatting */
+#tableauToggleUp {
+  display: none;
+}
 
-/* .projectLanding {
-  width: 80%;
-} */
+#tableau-row {
+  display: none;
+}
