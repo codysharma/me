@@ -305,24 +305,26 @@ document.getElementById('bg1').classList.add('active');
 setInterval(nextBackground, 3500); 
 
 // -------------Tableau Section hide/display
-let tableauSection = document.getElementById('tableau-row');
-let tableauHeading = document.getElementById('tableau-heading');
-let tableauToggleDown = document.getElementById('tableauToggleDown');
-let tableauToggleUp = document.getElementById('tableauToggleUp');
+// let tableauSection = document.getElementById('tableau-row');
+// let tableauHeading = document.getElementById('tableau-heading');
+// let tableauToggleDown = document.getElementById('tableauToggleDown');
+// let tableauToggleUp = document.getElementById('tableauToggleUp');
 
-tableauHeading.addEventListener('click', function(){
-  toggleDisplay(tableauSection, tableauToggleDown, tableauToggleUp);
-})
+// tableauHeading.addEventListener('click', function(){
+//   toggleDisplay(tableauSection, tableauToggleDown, tableauToggleUp);
+// })
 
-function toggleDisplay(section, tableauToggleDown, tableauToggleUp) {
-  let currentDisplay = window.getComputedStyle(section).display;
-  if (currentDisplay === 'none' || currentDisplay === '') {
-    section.style.display = 'block';
-    tableauToggleDown.style.display = 'none';
-    tableauToggleUp.style.display = 'inline';
-  } else {
-    section.style.display = 'none';
-    tableauToggleDown.style.display = 'inline';
-    tableauToggleUp.style.display = 'none';
-  }
-}
+// function toggleDisplay(section, tableauToggleDown, tableauToggleUp) {
+//   console.log(section.style.display);
+
+//   // let currentDisplay = window.getComputedStyle(section).display;
+//   if (section.style.display === 'none' || section.style.display === '') {
+//     section.style.display = 'block';
+//     tableauToggleDown.style.display = 'none';
+//     tableauToggleUp.style.display = 'inline';
+//   } else {
+//     section.style.display = 'none';
+//     tableauToggleDown.style.display = 'inline';
+//     tableauToggleUp.style.display = 'none';
+//   }
+// }
