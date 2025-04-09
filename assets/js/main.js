@@ -315,15 +315,14 @@ tableauHeading.addEventListener('click', function(){
 })
 
 function toggleDisplay(section, tableauToggleDown, tableauToggleUp) {
-  console.log(section.style.display);
-
-  // let currentDisplay = window.getComputedStyle(section).display;
-  if (section.style.display === 'none' || section.style.display === '') {
-    section.style.display = 'inline-flex';
+  // Toggle the class between visible and not
+  section.classList.toggle('visible');
+  
+  // Change the arrows visible in header based on section visibility
+  if (section.classList.contains('visible')) {
     tableauToggleDown.style.display = 'none';
     tableauToggleUp.style.display = 'inline';
   } else {
-    section.style.display = 'none';
     tableauToggleDown.style.display = 'inline';
     tableauToggleUp.style.display = 'none';
   }
