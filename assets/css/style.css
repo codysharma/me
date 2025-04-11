@@ -358,6 +358,7 @@ h6 {
   width: 100%;
   height: 100%;
   background-size: cover;
+  /* If doing true background, make the size contain/stretch */
   background-position: 90% auto;
   transition: opacity .5s ease-in-out;
   opacity: 0;
