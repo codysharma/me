@@ -269,7 +269,7 @@
 
 })()
 
-// making bg of landing section a slideshow instead of static
+//---------------- making bg of landing section a slideshow instead of static
 const landingBackgrounds = [
   '../assets/img/landingImages/4.png',
   '../assets/img/landingImages/1.png',
