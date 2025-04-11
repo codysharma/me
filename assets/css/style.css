@@ -756,12 +756,24 @@ section {
   right: 15px;
 }
 
+.portfolio-content {
+  overflow: auto;
+  max-height: 85vh;
+}
+
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
 .portfolio-details {
   padding-top: 40px;
+  /* max-height: 100%; */
 }
+
+/* .portfolio-details-slider {
+  position: fixed;
+  overflow: hidden;
+  max-width: 50%;
+} */
 
 .portfolio-details .portfolio-details-slider img {
   width: 100%;
