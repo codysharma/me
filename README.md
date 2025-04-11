@@ -1,3 +1,2 @@
 -on project modals, make the div the scrollable part rather than the whole modal - so div has set height and won't make the modal large enough to scroll  
 -make the background cycles on landing section take up only the right half of the screen rather than the full background - too noisy to tanvi
--oragnize the github (make modals folder, eg)
