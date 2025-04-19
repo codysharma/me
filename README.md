@@ -1,1 +1,1 @@
--make the background cycles on landing section take up only the right half of the screen rather than the full background - too noisy to tanvi
+-move pic to left side of landing page, and add a background picture of the fam  
