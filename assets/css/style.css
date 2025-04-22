@@ -86,7 +86,7 @@ h6 {
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader .3s linear infinite;
 }
 
 @keyframes animate-preloader {
@@ -375,11 +375,40 @@ h6 {
   border-radius: 20px;
   padding: 3rem;
   /* border: #0678e3 solid 2px; */
-  max-width: fit-content;  
+  max-width: 30%;  
   position: relative;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
   /* left: -30%; */
-  top: 30%;
-  max-height: 30%;
+  /* top: 30%; */
+  /* max-height: 30%; */
+}
+
+#headshot {
+  max-width: 300px !important;
+  max-height: 275px !important;
+  height: auto !important;
+  /* width: auto; */
+}
+
+#content-row-1{
+  grid-row: 1 1;
+}
+
+#content-row-2{
+  grid-row: 2 2;
+}
+
+@media (max-width: 1000px) {
+  #headshot {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  #landing-pictures {
+    display: none;
+  }
 }
 
 /*--------------------------------------------------------------
