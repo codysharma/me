@@ -377,11 +377,11 @@ h6 {
   /* border: #0678e3 solid 2px; */
   max-width: 30%;  
   position: relative;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
+  /* display: grid;
+  grid-template-rows: 1fr 1fr; */
   /* left: -30%; */
-  /* top: 30%; */
-  /* max-height: 30%; */
+  top: 30%;
+  max-height: 30%;
 }
 
 #headshot {
